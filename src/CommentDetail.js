@@ -1,19 +1,12 @@
 import React from 'react';
-import { faker } from '@faker-js/faker';
 
 const CommentDetail = (props) => {
   return (
     <div className="comment">
       <a href="/" className="avatar">
-        <img alt="avatar" src={faker.image.avatar()} />
+        <img alt="avatar" src={props.avatar} />
       </a>
-      <div
-        className="content"
-        style={{
-          display: 'inline-block',
-          padding: '0px 20px',
-        }}
-      >
+      <div className="content">
         <a href="/" className="author">
           {props.author}
         </a>
